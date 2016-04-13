@@ -6,7 +6,7 @@ import controllers._
 
 class CheckoutSpec extends FunSuite {
     
-  test("scanBEEP total should equal £2.20 because to offers are set") {
+  test("scanBEEP total should equal £2.20 because offers are not set") {
     val scan = Array[String]("orange", "orange", "apple", "orange", "apple", "orange")
     assert(Checkout.scanBEEP(scan)=="£2.20")
   }
